@@ -1,0 +1,242 @@
+/* Establecer un reseteo de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+header img {
+  margin: 0;
+  width: 100%; /* La imagen ocupa todo el ancho */
+   height: 600px;
+}
+
+/*Separador de imagen a navbar*/
+.separator {
+    width: 80% ; /* Ancho del separador */
+    height: 2rem;
+    display: flex;
+  
+    border: none;
+  
+ 
+  
+}
+
+/* Estilos para la barra de navegación superior */
+.top-nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: #333; /* Color de texto gris oscuro */
+    display: flex;
+    justify-content: flex-end; /* Alineación a la derecha */
+    padding: 10px;
+   
+}
+
+.top-nav ul {
+    list-style: none;
+    display: flex;
+   
+}
+
+.top-nav li {
+    margin-right: 50px;
+    position: relative;
+}
+
+.top-nav li:last-child {
+    margin-right: 0;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #333; /* Color de texto gris oscuro */
+}
+
+/* Estilos para el buscador */
+.top-nav input[type="text"],
+.top-nav button {
+    height: 30px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+/* Estilos para el contenido principal */
+main {
+    position: relative;
+}
+
+/* Estilos para el menú de navegación del main */
+.main-nav {
+    background: transparent;
+    color: #000; /* Texto negro */
+    padding: 10px;
+    border-top: 1px solid #ccc; /* Línea gris encima del menú */
+    display: flex;
+    margin-left: 120px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Alinear elementos al centro */
+}
+
+.main-nav li {
+    margin: 0 10px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #000; /* Texto negro */
+}
+
+
+/* Estilos para el contenedor de imágenes */
+.image-container {
+   
+    padding: 10px;
+}
+
+.image-row {
+  display: flex;
+  padding-left: 8rem;
+
+    margin-bottom: 10px;
+
+}
+
+.image-row img {
+    width: calc(33.33% - 10px); /* 3 imágenes por fila con margen */
+    /* ajusta el ancho y márgenes según tus necesidades */
+     padding-left: 1rem;
+}
+
+.imagenUno{
+width: 400px !important;
+height: 500px;
+
+}
+.imagenDos{
+    width: 400px !important;
+    height: 600px;
+}
+
+.imagenTres{
+    width: 500px !important;
+}
+
+.imagenCinco{
+    width: 250px  !important;
+    height: 300px;
+
+}
+
+.imagenSeis{
+    width: 250px !important;
+    height: 300px;
+}
+
+.contenedorDobleImagen{
+margin-left: 22rem;
+
+}
+
+
+/* Estilos para el footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+   margin-left: 150px;
+ width: 1300px;
+    color: #000000;
+    padding: 40px 0;
+}
+
+.footer-column {
+    text-align: center;
+    flex: 1;
+   
+}
+
+h2 {
+    font-size: 1em !important;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1em !important;
+}
+
+
+.social-icons {
+    display: flex;
+    
+ margin:1rem;
+ margin-left: 13rem;
+    background: #1ecdc1 ; /* Color de fondo celeste */
+    padding: 20px 0;
+    text-align: center;
+    width: 1200px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* Estilos para el contenido principal */
+/* ... */
+
+
+/* ... (otros estilos) ... */
+
+/*
+.Menu {
+    border: 2px solid red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    z-index: 1;
+    transition: .5s;
+    -webkit-transition: .5s;
+    height: 100%;
+    width: 600px;
+    background-color: rgba(0,0,0,.9);
+}
+
+.Menu .Btoncerrar {
+    border: 2px solid red;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    z-index: 100;
+}
+#Menu a{
+    font-size: 36px;
+
+}
+
+*/
