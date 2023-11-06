@@ -28,36 +28,89 @@ header img {
   
 }
 
+
+
+
+/*Estilos Generales*/
+
+
+
+.custom-navbar {
+    background-color: #333;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1001; /* Un z-index más alto que el de la barra de navegación normal */
+   
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around; /* Cambiado a space-around para más cercanía en el centro */
+    width: 100%;
+ 
+}
+
+.nav-item {
+    text-align: center;
+    margin: 0 15px; /* Ajusta este valor para cambiar el espaciado entre elementos */
+    
+}
+
+.nav-links a {
+    color: white; /* Color del texto de las secciones */
+    text-decoration: none ;
+    padding: 0 15px; /* Espacio interno horizontal */
+}
+
+.nav-links a:hover {
+   
+    color: green;
+}
 /* Estilos para la barra de navegación superior */
 .top-nav {
     position: absolute;
-    top: 0;
+    height: 60px; /* Ajusta la altura según sea necesario */
+    top: 40px; /* Asegúrate de ajustar esto para que coincida con la altura de la nueva barra */
     width: 100%;
     color: #333; /* Color de texto gris oscuro */
     display: flex;
     justify-content: flex-end; /* Alineación a la derecha */
     padding: 10px;
+    z-index: 1000; /* Z-index menor para que la nueva barra esté por encima */
    
 }
 
 .top-nav ul {
     list-style: none;
     display: flex;
+    
    
 }
 
 .top-nav li {
     margin-right: 50px;
     position: relative;
+  
 }
 
 .top-nav li:last-child {
     margin-right: 0;
 }
+.top-nav li a {
+   color:#737373;
+   font-family: 'Poppins', sans-serif;
+   
+  
 
+}
 .top-nav a {
     text-decoration: none;
     color: #333; /* Color de texto gris oscuro */
+
 }
 
 /* Estilos para el buscador */
@@ -69,88 +122,6 @@ header img {
     border-radius: 3px;
     margin-right: 10px;
 }
-
-/* Estilos para el contenido principal */
-main {
-    position: relative;
-}
-
-/* Estilos para el menú de navegación del main */
-.main-nav {
-    background: transparent;
-    color: #000; /* Texto negro */
-    padding: 10px;
-    border-top: 1px solid #ccc; /* Línea gris encima del menú */
-    display: flex;
-    margin-left: 120px;
-}
-
-.main-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center; /* Alinear elementos al centro */
-}
-
-.main-nav li {
-    margin: 0 10px;
-}
-
-.main-nav a {
-    text-decoration: none;
-    color: #000; /* Texto negro */
-}
-
-
-/* Estilos para el contenedor de imágenes */
-.image-container {
-   
-    padding: 10px;
-}
-
-.image-row {
-  display: flex;
-  padding-left: 8rem;
-
-    margin-bottom: 10px;
-
-}
-
-.image-row img {
-    width: calc(33.33% - 10px); /* 3 imágenes por fila con margen */
-    /* ajusta el ancho y márgenes según tus necesidades */
-     padding-left: 1rem;
-}
-
-.imagenUno{
-width: 400px !important;
-height: 500px;
-
-}
-.imagenDos{
-    width: 400px !important;
-    height: 600px;
-}
-
-.imagenTres{
-    width: 500px !important;
-}
-
-.imagenCinco{
-    width: 250px  !important;
-    height: 300px;
-
-}
-
-.imagenSeis{
-    width: 250px !important;
-    height: 300px;
-}
-
-.contenedorDobleImagen{
-margin-left: 22rem;
-
-}
-
 
 /* Estilos para el footer */
 footer {
@@ -199,6 +170,259 @@ p {
     font-size: 24px;
     text-decoration: none;
 }
+
+
+
+
+
+
+
+
+/* Estilos para el menú de navegación del main */
+
+.row{
+    padding:2rem;
+}
+.main-nav {
+    background: transparent;
+    color: #000; /* Texto negro */
+    padding: 10px;
+    border-top: 1px solid #ccc; /* Línea gris encima del menú */
+    display: flex;
+    margin-left: 120px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Alinear elementos al centro */
+}
+
+.main-nav li {
+    margin: 0 10px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #000; /* Texto negro */
+}
+
+/* Estilos para el contenedor de imágenes */
+.image-container {
+    padding: 10px;
+}
+
+.image-row {
+    display: flex;
+    padding-left: 8rem;
+    margin-bottom: 10px;
+}
+
+.image-row img {
+    width: calc(33.33% - 10px); /* 3 imágenes por fila con margen */
+    /* ajusta el ancho y márgenes según tus necesidades */
+    padding-left: 1rem;
+}
+
+.imagenUno {
+    width: 400px !important;
+    height: 500px;
+}
+
+.imagenDos {
+    width: 400px !important;
+    height: 600px;
+}
+
+.imagenTres {
+    width: 500px !important;
+}
+
+.imagenCinco {
+    width: 250px  !important;
+    height: 300px;
+}
+
+.imagenSeis {
+    width: 250px !important;
+    height: 300px;
+}
+
+.contenedorDobleImagen {
+    margin-left: 22rem;
+}
+
+.col-md-6 {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorDobleImagen {
+    display: flex;
+    justify-content: flex-start; /* Alinea los elementos a la izquierda del contenedor */
+    margin-left: 220px;
+}
+
+.contenedorDobleImagen .image-col:first-child {
+    margin-right: 10px; /* Ajusta el espacio entre las imágenes */
+}
+
+/* Para la última imagen en la fila, elimina el margen derecho */
+.image-col:last-child {
+    margin-right: 0;
+}
+
+.image-col {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s; /* Agregamos una transición para que el efecto sea suave */
+}
+
+.image-col:hover {
+    transform: scale(1.05); /* Escalamos la imagen al hacer hover */
+}
+
+
+.precio {
+    position: absolute;
+    top: 10px; /* Ajusta la posición vertical */
+    left: 10px; /* Ajusta la posición horizontal */
+    color: #666; /* Color gris */
+    font-size: 14px; /* Tamaño del texto */
+}
+.image-col {
+    position: relative;
+}
+
+.precio {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #666;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.titulo,
+.contenidoAdicional {
+    position: absolute;
+    
+   
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.contenidoAdicional {
+    top: calc(100% - 150px); /* Coloca el contenido adicional 20px debajo del título */
+}
+
+.image-col:hover .precio,
+.image-col:hover .titulo,
+.image-col:hover .contenidoAdicional {
+    opacity: 1;
+}
+
+.titulo {
+    color: #000; /* Cambia el color del título a negro */
+    font-size: 20px;
+}
+
+
+
+/*CONTACTO */
+
+
+nav.top-nav {
+    margin-top: 20px;
+}
+
+/*Banner Contacto*/
+.contenedor-imagen {
+    
+    width: 100%; /* Ajusta el ancho según tu diseño */
+    margin-top: 120px;
+    
+}
+
+.zoomed-image {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Ajusta la altura según tu diseño */
+    overflow: hidden;
+ 
+}
+
+.zoomed-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con opacidad */
+}
+
+.zoomed-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; /* Asegura que la imagen esté por encima del oscurecimiento */
+    
+}
+
+
+/*MAIN CONTACTO*/
+main.container {
+
+    display: flex;
+    justify-content: space-around;
+    margin-left: 150px;
+    
+
+}
+.contactoMain{
+    display: flex;
+      
+  
+}
+
+.container {
+    
+    
+    padding: 20px;
+    margin: 50px;
+    width: 70%;
+    
+}
+
+.columna {
+    width: 45%;
+    
+    
+}
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para los inputs en el formulario */
+.formLogin input {
+    margin-bottom: 10px; /* Añade espacio entre los inputs */
+    padding: 8px; /* Ajusta el relleno del input */
+}
+
+
+
+button {
+    padding: 5px 10px; /* Ajusta el tamaño del botón */
+    align-self: flex-start; /* Alinea los botones a la izquierda */
+}
+
+
+
 
 
 

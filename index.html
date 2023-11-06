@@ -9,11 +9,21 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
 
     <!-- Enlaces a hojas de estilo, scripts, metadatos, etc. -->
 </head>
 
 <body>
+    <div class="custom-navbar">
+        <div class="nav-links">
+            <a href="#registro">Registro</a>
+            <a href="#iniciar-sesion">Iniciar Sesión</a>
+            <a href="#carrito">🛒 Carrito</a>
+        </div>
+    </div>
+   
 
 
     <nav class="top-nav">
@@ -22,7 +32,7 @@
             <li><a href="#">Mujer</a></li>
             <li><a href="#">Nosotros</a></li>
             <li><a href="#">Novedades</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
             <li>
                 <input type="text" placeholder="Buscar">
                 <button class="search-button"><i class="fas fa-search"></i></button>
@@ -67,59 +77,109 @@
         <!-- Más contenido del main -->
 
         <div class="image-container">
-
-
-            <div class="image-row">
-                <img src="imagenes/tendencias.jpg" alt="Descripción de la imagen 1" class="imagenUno">
-                <img src="imagenes/item-2.png" alt="Descripción de la imagen 2" class="imagenDos">
-                <img src="imagenes/item-4.png" alt="Descripción de la imagen 3" class="imagenTres">
-            </div>
-            <div class="image-row">
-                <img src="imagenes/item-3.png" alt="Descripción de la imagen 4">
-                <div class="contenedorDobleImagen">
-                    <img src="imagenes/item-5.png" alt="Descripción de la imagen 5" class="imagenCinco">
-                    <img src="imagenes/item-6.png" alt="Descripción de la imagen 6" class="imagenSeis">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="image-col">
+                        <img src="imagenes/tendencias.jpg" alt="Descripción de la imagen 1" class="imagenUno">
+                        <div class="overlay">
+                            <h3 class="titulo">Título 1</h3>
+                            <p class="contenidoAdicional">Contenido adicional 1</p>
+                            <span class="precio">$19.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="image-col">
+                        <img src="imagenes/item-2.png" alt="Descripción de la imagen 2" class="imagenDos">
+                        <div class="overlay">
+                            <h3 class="titulo">Título 2</h3>
+                            <p class="contenidoAdicional">Contenido adicional 2</p>
+                            <span class="precio">$19.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="image-col">
+                        <img src="imagenes/item-4.png" alt="Descripción de la imagen 3" class="imagenTres">
+                        <div class="overlay">
+                            <h3 class="titulo">Título 3</h3>
+                            <p class="contenidoAdicional">Contenido adicional 3</p>
+                            <span class="precio">$19.99</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="image-col">
+                        <img src="imagenes/item-3.png" alt="Descripción de la imagen 4" class="imagenCuatro">
+                        <div class="overlay">
+                            <h3 class="titulo">Título 4</h3>
+                            <p class="contenidoAdicional">Contenido adicional 4</p>
+                            <span class="precio">$19.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contenedorDobleImagen">
+                        <div class="image-col">
+                            <img src="imagenes/item-5.png" alt="Descripción de la imagen 5" class="imagenCinco">
+                            <div class="overlay">
+                                <h3 class="titulo">Título 5</h3>
+                                <p class="contenidoAdicional">Contenido adicional 5</p>
+                                <span class="precio">$19.99</span>
+                            </div>
+                        </div>
+                        <div class="image-col">
+                            <img src="imagenes/item-6.png" alt="Descripción de la imagen 6" class="imagenSeis">
+                            <div class="overlay">
+                                <h3 class="titulo">Título 6</h3>
+                                <p class="contenidoAdicional">Contenido adicional 6</p>
+                                <span class="precio">$19.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        
+        
     </main>
     <footer>
         <div class="footer-column">
-            <h2>Título 1</h2>
-            <p>Subtítulo 1</p>
-            <p>Subtítulo 2</p>
-            <p>Subtítulo 3</p>
-            <p>Subtítulo 4</p>
+            <h2>Informacion</h2>
+            <p>Nosotros</p>
+            <p>Sucursales</p>
+            <p>Marcas</p>
+            <p>Mapa del sitio</p>
         </div>
         <div class="footer-column">
-            <h2>Título 2</h2>
-            <p>Subtítulo 1</p>
-            <p>Subtítulo 2</p>
-            <p>Subtítulo 3</p>
-            <p>Subtítulo 4</p>
+            <h2>Porque comprar</h2>
+            <p>Envios internacionales</p>
+            <p>Compras seguras</p>
+            <p>Testimonios</p>
+            <p>Mayoristas</p>
         </div>
         <div class="footer-column">
-            <h2>Título 3</h2>
-            <p>Subtítulo 1</p>
-            <p>Subtítulo 2</p>
-            <p>Subtítulo 3</p>
-            <p>Subtítulo 4</p>
+            <h2>Tu cuenta</h2>
+            <p>Tus descuentos</p>
+            <p>Seguimientos</p>
+            <p>Favoritos</p>
+            <p>Historial</p>
         </div>
         <div class="footer-column">
-            <h2>Título 4</h2>
-            <p>Subtítulo 1</p>
-            <p>Subtítulo 2</p>
-            <p>Subtítulo 3</p>
-            <p>Subtítulo 4</p>
+            <h2>Noticias</h2>
+            <p>Nuevas Sucursales</p>
+            <p>Ofertas y Descuentos</p>
+            <p>Dia de la madre</p>
+            <p>Temporada 2022/2023</p>
         </div>
         <div class="footer-column">
-            <h2>Título 5</h2>
-            <p>Subtítulo 1</p>
-            <p>Subtítulo 2</p>
-            <p>Subtítulo 3</p>
-            <p>Subtítulo 4</p>
+            <h2>Servicios</h2>
+            <p>Asesoramiento online</p>
+            <p>Bolsa de trabajo</p>
+            <p>Catalogo online</p>
+            <p>Guarderia</p>
         </div>
 
      
