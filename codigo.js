@@ -27,11 +27,40 @@ setTimeout("Chiri()" , 1000  );
 //Llamamos al metodo-- Este seria el MAIN
 Chiri();
 
-function cerrarVtana(){
-  document.getElementById("Ventana").style.width="0%";
+// script.js
+
+function mostrarMenu() {
+  document.getElementById("Ventana").style.width = "100%";
 }
 
-function mostrarMenu(){
-    document.getElementById("Ventana").style.width="100%";
 
+
+
+
+function obtenerFechaFormateada() {
+  var fechaActual = new Date();
+  var diasSemana = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
+  var meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+
+  var diaSemana = diasSemana[fechaActual.getDay()];
+  var diaMes = fechaActual.getDate();
+  var mes = meses[fechaActual.getMonth()];
+  var año = fechaActual.getFullYear();
+
+  var formatoFecha = diaSemana + ', ' + diaMes + ' de ' + mes + ' de ' + año;
+
+  return formatoFecha;
+}
+
+// Insertar la fecha en un elemento con el id "fechaMostrada" al cargar la página
+document.addEventListener('DOMContentLoaded', function () {
+  insertarFechaEnElemento('fechaMostrada');
+});
+
+// Función para insertar la fecha en elementos HTML
+function insertarFechaEnElemento(elementoId) {
+  var elemento = document.getElementById(elementoId);
+  if (elemento) {
+    elemento.innerHTML = obtenerFechaFormateada();
+  }
 }
