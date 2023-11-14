@@ -13,7 +13,7 @@ html {
 
 header img {
   margin: 0;
-  width: 100%; /* La imagen ocupa todo el ancho */
+  width: 100%;
   height: 600px;
 }
 
@@ -36,7 +36,7 @@ background-color: #ffffff;
 
 /*Separador de imagen a navbar*/
 .separator {
-  width: 80%; /* Ancho del separador */
+  width: 80%; 
   height: 2rem;
   display: flex;
 
@@ -53,24 +53,24 @@ background-color: #ffffff;
   align-items: center;
   position: fixed;
   top: 0;
-  z-index: 1001; /* Un z-index más alto que el de la barra de navegación normal */
+  z-index: 1001; 
 }
 
 .nav-links {
   display: flex;
-  justify-content: space-around; /* Cambiado a space-around para más cercanía en el centro */
+  justify-content: space-around; 
   width: 100%;
 }
 
 .nav-item {
   text-align: center;
-  margin: 0 15px; /* Ajusta este valor para cambiar el espaciado entre elementos */
+  margin: 0 15px; 
 }
 
 .nav-links a {
-  color: white; /* Color del texto de las secciones */
+  color: white; 
   text-decoration: none;
-  padding: 0 15px; /* Espacio interno horizontal */
+  padding: 0 15px;
 }
 
 .nav-links a:hover {
@@ -79,14 +79,14 @@ background-color: #ffffff;
 /* Estilos para la barra de navegación superior */
 .top-nav {
   position: absolute;
-  height: 60px; /* Ajusta la altura según sea necesario */
-  top: 40px; /* Asegúrate de ajustar esto para que coincida con la altura de la nueva barra */
+  height: 60px; 
+  top: 40px; 
   width: 100%;
-  color: #333; /* Color de texto gris oscuro */
+  color: #333; 
   display: flex;
-  justify-content: flex-end; /* Alineación a la derecha */
+  justify-content: flex-end; 
   padding: 10px;
-  z-index: 1000; /* Z-index menor para que la nueva barra esté por encima */
+  z-index: 1000; 
 }
 
 .top-nav ul {
@@ -108,7 +108,7 @@ background-color: #ffffff;
 }
 .top-nav a {
   text-decoration: none;
-  color: #333; /* Color de texto gris oscuro */
+  color: #333; 
 }
 
 /* Estilos para el buscador */
@@ -129,6 +129,22 @@ background-color: #ffffff;
   
 }
 
+.chaquetasOption{
+  margin-left: 15px;
+}
+
+.accesoriosOption{
+margin-left: 15px;
+
+}
+
+.trajesOption{
+  margin-left: 15px;
+}
+
+.nuevaTemporadaOption{
+  margin-right: 8px !important;
+}
 
 .Menu {
   height: 0;
@@ -207,7 +223,7 @@ p {
 
   margin: 1rem;
   margin-left: 13rem;
-  background: #1ecdc1; /* Color de fondo celeste */
+  background: #1ecdc1; 
   padding: 20px 0;
   text-align: center;
   width: 1200px;
@@ -231,9 +247,9 @@ p {
 }
 .main-nav {
   background: transparent;
-  color: #000; /* Texto negro */
+  color: #000; 
   padding: 10px;
-  border-top: 1px solid #ccc; /* Línea gris encima del menú */
+  border-top: 1px solid #ccc; 
   display: flex;
   margin-left: 120px;
 }
@@ -241,7 +257,7 @@ p {
 .main-nav ul {
   list-style: none;
   display: flex;
-  justify-content: center; /* Alinear elementos al centro */
+  justify-content: center; 
 }
 
 .main-nav li {
@@ -250,7 +266,7 @@ p {
 
 .main-nav a {
   text-decoration: none;
-  color: #000; /* Texto negro */
+  color: #000; 
 }
 
 /* Estilos para el contenedor de imágenes */
@@ -265,8 +281,8 @@ p {
 }
 
 .image-row img {
-  width: calc(33.33% - 10px); /* 3 imágenes por fila con margen */
-  /* ajusta el ancho y márgenes según tus necesidades */
+  width: calc(33.33% - 10px); 
+ 
   padding-left: 1rem;
 }
 
@@ -322,12 +338,12 @@ p {
 
 .contenedorDobleImagen {
   display: flex;
-  justify-content: flex-start; /* Alinea los elementos a la izquierda del contenedor */
+  justify-content: flex-start; 
   margin-left: 220px;
 }
 
 .contenedorDobleImagen .image-col:first-child {
-  margin-right: 10px; /* Ajusta el espacio entre las imágenes */
+  margin-right: 10px; 
 }
 
 /* Para la última imagen en la fila, elimina el margen derecho */
@@ -338,21 +354,21 @@ p {
 .image-col {
   position: relative;
   overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s; /* Agregamos una transición para que el efecto sea suave */
-  border-radius: 8px; /* Añadimos un radio de borde para suavizar las esquinas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadimos sombra */
+  transition: transform 0.3s, box-shadow 0.3s; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .image-col:hover {
-  transform: scale(1.05); /* Escalamos la imagen al hacer hover */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Ajustamos la sombra más pronunciada al hacer hover */
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); 
 }
 .precio {
   position: absolute;
-  top: 10px; /* Ajusta la posición vertical */
-  left: 10px; /* Ajusta la posición horizontal */
-  color: #666; /* Color gris */
-  font-size: 14px; /* Tamaño del texto */
+  top: 10px; 
+  left: 10px; 
+  color: #666; 
+  font-size: 14px; 
 }
 .image-col {
   position: relative;
@@ -378,7 +394,7 @@ p {
 .contenidoAdicional {
   top: calc(
     100% - 150px
-  ); /* Coloca el contenido adicional 20px debajo del título */
+  ); 
 }
 
 .image-col:hover .precio,
@@ -388,7 +404,7 @@ p {
 }
 
 .titulo {
-  color: #000; /* Cambia el color del título a negro */
+  color: #000; 
   font-size: 20px;
 }
 .ContenedorTitulo{
@@ -400,36 +416,36 @@ p {
 
 /*Iconos dentro del hover de las imagenes*/
 .icon-buttons {
-  display: none; /* Inicialmente oculto */
+  display: none; 
 }
 .icon-buttonsSec{
   display: none;
 }
 
 .image-col:hover .icon-buttons  {
-  display: flex; /* Muestra los botones al hacer hover */
+  display: flex; 
   justify-content: center;
   
 }
 
 .image-col:hover .icon-buttonsSec  {
-  display: flex; /* Muestra los botones al hacer hover */
+  display: flex; 
   justify-content: center;
 }
 .icon-button {
-  margin-right: 10px; /* Espacio entre los botones */
+  margin-right: 10px; 
 }
 
 .icon-button i {
-  font-size: 20px; /* Tamaño del ícono */
-  color: white; /* Color del ícono */
+  font-size: 20px; 
+  color: white; 
 }
 
 .icon-button {
-  width: 50px; /* Ancho del botón */
-  height: 50px; /* Altura del botón */
-  background-color: #666; /* Color de fondo gris */
-  border-radius: 50%; /* Forma de círculo */
+  width: 50px; 
+  height: 50px; 
+  background-color: #666; 
+  border-radius: 50%; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -437,7 +453,7 @@ p {
 }
 
 .icon-button:hover {
-  background-color: #555; /* Cambio de color al hacer hover */
+  background-color: #555;
 }
 
 
@@ -449,14 +465,14 @@ nav.top-nav {
 
 /*Banner Contacto*/
 .contenedor-imagen {
-  width: 100%; /* Ajusta el ancho según tu diseño */
+  width: 100%; 
   margin-top: 120px;
 }
 
 .zoomed-image {
   position: relative;
   width: 100%;
-  height: 300px; /* Ajusta la altura según tu diseño */
+  height: 300px; 
   overflow: hidden;
 }
 
@@ -467,14 +483,14 @@ nav.top-nav {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con opacidad */
+  background-color: rgba(0, 0, 0, 0.7); 
 }
 
 .zoomed-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 1; /* Asegura que la imagen esté por encima del oscurecimiento */
+  z-index: 1; 
 }
 
 /*MAIN CONTACTO*/
@@ -504,13 +520,13 @@ main.container {
 
 /* Estilos para los inputs en el formulario */
 .formLogin input {
-  margin-bottom: 10px; /* Añade espacio entre los inputs */
-  padding: 8px; /* Ajusta el relleno del input */
+  margin-bottom: 10px; 
+  padding: 8px; 
 }
 
 button {
-  padding: 5px 10px; /* Ajusta el tamaño del botón */
-  align-self: flex-start; /* Alinea los botones a la izquierda */
+  padding: 5px 10px; 
+  align-self: flex-start; 
 }
 
 .overlay{
@@ -525,44 +541,3 @@ padding:1rem;
 
 
 
-
-
-
-
-
-
-
-/* Estilos para el contenido principal */
-/* ... */
-
-/* ... (otros estilos) ... */
-
-/*
-.Menu {
-    border: 2px solid red;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    z-index: 1;
-    transition: .5s;
-    -webkit-transition: .5s;
-    height: 100%;
-    width: 600px;
-    background-color: rgba(0,0,0,.9);
-}
-
-.Menu .Btoncerrar {
-    border: 2px solid red;
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-    z-index: 100;
-}
-#Menu a{
-    font-size: 36px;
-
-}
-
-*/
